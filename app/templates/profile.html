@@ -1,0 +1,50 @@
+{% extends "base.html" %} 
+
+{% block main %}
+	<div class="prof-container">
+	  <div class="page-wrapper">
+	    <div class="page-header">
+	      <img
+	        src="{{ url_for('static', filename='PP.jpg') }}"
+	        alt=""
+	        class="profile-img"
+	      />
+	      <h2 id="my-name">keishma pitter </h2>
+	      <p id="socialmedia">@raiden_keish</p>
+	      <p>Kingston, Jamaica</p>
+	      <p>Joined October, 2019 {{ d1 }}</p>
+	    </div>
+	    <div class="page-body">
+	      <p class="page-text">
+	        I am a bright person who likes to pick up new skills, particularly in computer science.
+            I am the person you need if you need someone who takes initiative and is enthusiastic.
+
+            
+	      </p>
+	      <div id="social-status">
+	        <ul class="social-med">
+	          <li>
+	            <h3>20</h3>
+	          </li>
+	          <li class="records">Posts</li>
+	        </ul>
+	        <ul class="social-med">
+	          <li>
+	            <h3>97</h3>
+	          </li>
+	          <li class="record">Following</li>
+	        </ul>
+	        <ul class="social-med">
+	          <li>
+	            <h3>1.2M</h3>
+	          </li>
+	          <li class="record">Followers</li>
+	        </ul>
+	      </div>
+	      <button id="follow">Follow Me</button>
+	    </div>
+	  </div>
+	
+
+	  {% endblock %}
+	</div>
